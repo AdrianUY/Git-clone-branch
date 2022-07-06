@@ -1,0 +1,135 @@
+usuario@ubuntu-intro:~$ cd Documentos
+usuario@ubuntu-intro:~/Documentos$ ls -a
+.  ..  actividadGrupal  clase 15 ubuntu github.abw  .git  token git.abw
+usuario@ubuntu-intro:~/Documentos$ cd actividadGrupal
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ ls -a
+.  ..  .git  README.md
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ gir branch AdrianBarca
+No se ha encontrado la orden «gir», quizás quiso decir:
+ La orden «gip» del paquete «gip» (universe)
+ La orden «gij» del paquete «gcj-jre-headless» (universe)
+ La orden «gri» del paquete «gri» (universe)
+ La orden «gpr» del paquete «gpr» (universe)
+ La orden «git» del paquete «git» (main)
+ La orden «dir» del paquete «coreutils» (main)
+ La orden «gid» del paquete «id-utils» (universe)
+gir: no se encontró la orden
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git branch AdrianBarca
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git branch -a
+  AdrianBarca
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ touch DigitalHouse.txt
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ ls -a
+.  ..  DigitalHouse.txt  .git  README.md
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ nano DigitalHouse.txt
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git status
+En la rama main
+Su rama está actualizada con «origin/main».
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir en lo que se ha de confirmar)
+
+	DigitalHouse.txt
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git add .
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git status
+En la rama main
+Su rama está actualizada con «origin/main».
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+	nuevo archivo: DigitalHouse.txt
+
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git commit -m "archivoDHgeneradoenmirama"
+[main efbdea3] archivoDHgeneradoenmirama
+ 1 file changed, 1 insertion(+)
+ create mode 100644 DigitalHouse.txt
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git push origin 
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': AdrianUY
+Password for 'https://AdrianUY@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/GonzaloCaputo/actividadGrupal.git/'
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ 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
+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: no se encontró la orden
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git push origin AdrianBarca
+Username for 'https://github.com': AdrianUY
+Password for 'https://AdrianUY@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'AdrianBarca' on GitHub by visiting:
+remote:      https://github.com/GonzaloCaputo/actividadGrupal/pull/new/AdrianBarca
+remote: 
+To https://github.com/GonzaloCaputo/actividadGrupal.git
+ * [new branch]      AdrianBarca -> AdrianBarca
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ ls -a
+.  ..  DigitalHouse.txt  .git  README.md
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git add .
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git status
+En la rama main
+Su rama está delante de «origin/main» para 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git checkout AdrianBarca
+Switched to branch 'AdrianBarca'
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ ls -a
+.  ..  .git  README.md
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ touch Digital.txt
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ nano Digital.txt
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git add .
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git commit "commitramaadrianbarca"
+error: pathspec 'commitramaadrianbarca' did not match any file(s) known to git.
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ push origin AdrianBarca
+El programa «push» no está instalado. Puede instalarlo escribiendo:
+sudo apt install heimdal-clients
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git push origin AdrianBarca
+Username for 'https://github.com': AdrianUY
+Password for 'https://AdrianUY@github.com': 
+Everything up-to-date
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git status
+En la rama AdrianBarca
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+	nuevo archivo: Digital.txt
+
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git commit "subotxtDigital"
+error: pathspec 'subotxtDigital' did not match any file(s) known to git.
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git add .
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git commit -m "suboarchibo"
+[AdrianBarca e0db755] suboarchibo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Digital.txt
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ git push origin AdrianBarca
+Username for 'https://github.com': AdrianUY
+Password for 'https://AdrianUY@github.com': 
+Counting objects: 3, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 316 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/GonzaloCaputo/actividadGrupal.git
+   ac3a3f2..e0db755  AdrianBarca -> AdrianBarca
+usuario@ubuntu-intro:~/Documentos/actividadGrupal$ 
